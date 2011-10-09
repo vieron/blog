@@ -56,15 +56,15 @@ Conseguiríamos tener algo como esto:
 {% jsfiddle S987X result,css,html default 220px %}<br /><br />
 
 
-## Mas "problemitas"
+## Inconvenientes
 
 1. Si hay desigualdad entre el número de elementos que entran en cada fila, el comportamiento no suele ser el necesitado.
 
-{% jsfiddle zVBYz result,css,html default 220px %}
+  {% jsfiddle zVBYz result,css,html default 220px %}
 
-2. El elemento generado con el <code>:after</code> hace que haya un espacio después de la última fila, que no he conseguido eliminar. Esto muchas veces no tiene porque ser un problema, pero si tienes un fondo de color como en el ejemplo, quizás si lo sea.
+2. El elemento generado con el <code>:after</code> hace que haya un espacio después de la última fila, que he conseguido reducir con un <code>line-height:0;</code>, pero no eliminar. Esto muchas veces no tiene porque ser un problema, pero si tienes un fondo de color como en el ejemplo, quizás si lo sea.
 
-## Código final en limpio
+## Solución final
 
 Como a partir de Internet Explorer 8 ya se soportan los pseudo-elementos <code>:after</code> y <code>:before</code>, he evitado usar el <code>-ms-text-justify</code>, para que no se apliquen ambas soluciones.
 
@@ -72,6 +72,7 @@ Como a partir de Internet Explorer 8 ya se soportan los pseudo-elementos <code>:
 .grid {
   text-align:justify;
   text-justify: distribute-all-lines;
+  line-height:0;
  }
 
 .grid:after {
