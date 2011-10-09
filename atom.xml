@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
 
-  <title><![CDATA[vieron blog]]></title>
+  <title><![CDATA[vieron.log]]></title>
   <link href="http://vieron.github.com/blog/atom.xml" rel="self"/>
   <link href="http://vieron.github.com/blog/"/>
-  <updated>2011-10-09T23:06:51+02:00</updated>
+  <updated>2011-10-10T00:37:39+02:00</updated>
   <id>http://vieron.github.com/blog/</id>
   <author>
     <name><![CDATA[vieron]]></name>
@@ -86,22 +86,21 @@ Del 8 en adelante, la propiedad se usa como una extensión de CSS (con prefijo -
 <br /><br />
 
 
-<h2>Mas &#8220;problemitas&#8221;</h2>
+<h2>Inconvenientes</h2>
 
 <ol>
 <li>Si hay desigualdad entre el número de elementos que entran en cada fila, el comportamiento no suele ser el necesitado.</li>
 </ol>
 
 
-<iframe style="width: 100%; height: 220px" src="http://jsfiddle.net/zVBYz/embedded/result,css,html/light/"></iframe>
-
+<p>  <iframe style="width: 100%; height: 220px" src="http://jsfiddle.net/zVBYz/embedded/result,css,html/light/"></iframe></p>
 
 <ol>
-<li>El elemento generado con el <code>:after</code> hace que haya un espacio después de la última fila, que no he conseguido eliminar. Esto muchas veces no tiene porque ser un problema, pero si tienes un fondo de color como en el ejemplo, quizás si lo sea.</li>
+<li>El elemento generado con el <code>:after</code> hace que haya un espacio después de la última fila, que he conseguido reducir con un <code>line-height:0;</code>, pero no eliminar. Esto muchas veces no tiene porque ser un problema, pero si tienes un fondo de color como en el ejemplo, quizás si lo sea.</li>
 </ol>
 
 
-<h2>Código final en limpio</h2>
+<h2>Solución final</h2>
 
 <p>Como a partir de Internet Explorer 8 ya se soportan los pseudo-elementos <code>:after</code> y <code>:before</code>, he evitado usar el <code>-ms-text-justify</code>, para que no se apliquen ambas soluciones.</p>
 
@@ -128,9 +127,11 @@ Del 8 en adelante, la propiedad se usa como una extensión de CSS (con prefijo -
 <span class='line-number'>21</span>
 <span class='line-number'>22</span>
 <span class='line-number'>23</span>
+<span class='line-number'>24</span>
 </pre></td><td class='code'><pre><code class='css'><span class='line'><span class="nc">.grid</span> <span class="p">{</span>
 </span><span class='line'>  <span class="k">text-align</span><span class="o">:</span><span class="k">justify</span><span class="p">;</span>
 </span><span class='line'>  <span class="k">text</span><span class="o">-</span><span class="k">justify</span><span class="o">:</span> <span class="n">distribute</span><span class="o">-</span><span class="n">all</span><span class="o">-</span><span class="n">lines</span><span class="p">;</span>
+</span><span class='line'>  <span class="k">line-height</span><span class="o">:</span><span class="m">0</span><span class="p">;</span>
 </span><span class='line'> <span class="p">}</span>
 </span><span class='line'>
 </span><span class='line'><span class="nc">.grid</span><span class="nd">:after</span> <span class="p">{</span>
