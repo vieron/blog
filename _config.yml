@@ -2,7 +2,7 @@
 #      Main Configs       #
 # ----------------------- #
 
-url: http://vieron.github.com/blog/
+url: "http://vieron.github.com/blog/"
 title: vieron blog
 subtitle: Front-end Web Development and Web Design stuff
 author: vieron
