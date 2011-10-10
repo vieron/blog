@@ -4,7 +4,7 @@
   <title><![CDATA[vieron.log]]></title>
   <link href="http://vieron.github.com/blog/atom.xml" rel="self"/>
   <link href="http://vieron.github.com/blog/"/>
-  <updated>2011-10-10T15:59:14+02:00</updated>
+  <updated>2011-10-10T16:33:28+02:00</updated>
   <id>http://vieron.github.com/blog/</id>
   <author>
     <name><![CDATA[vieron]]></name>
@@ -159,7 +159,7 @@ Del 8 en adelante, la propiedad se usa como una extensión de CSS (con prefijo -
 
 <ul>
 <li>Es un patrón bastante común, y se puede usar para estructurar a todos los niveles.</li>
-<li>La gran ventaja de este patrón es su flexibilidad, no tener que establecer anchos ni márgenes de separación entre elementos, es una gran win.</li>
+<li>La gran ventaja de este patrón es su flexibilidad, no tener que establecer anchos ni márgenes de sueparación entre elementos, es una gran win.</li>
 <li>De momento esta es la mejor solución que he encontrado, pero seguro que se puede mejorar.</li>
 </ul>
 
