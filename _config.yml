@@ -19,7 +19,7 @@ email:
 # ----------------------- #
 
 # If publishing to a subdirectory as in http://site.com/project set 'root: /project'
-root: /blog
+root: /
 permalink: /blog/:year/:month/:day/:title/
 source: source
 destination: public
@@ -79,4 +79,4 @@ disqus_short_name: blogvieron
 disqus_show_comment_count: false
 
 # Google Analytics
-google_analytics_tracking_id:
+google_analytics_tracking_id: UA-3959705-2
