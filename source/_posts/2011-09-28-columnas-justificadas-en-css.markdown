@@ -98,7 +98,7 @@ Como a partir de Internet Explorer 8 ya se soportan los pseudo-elementos <code>:
 ### Para terminar
 
 - Es un patrón bastante común, y se puede usar para estructurar a todos los niveles.
-- La gran ventaja de este patrón es su flexibilidad, no tener que establecer anchos ni márgenes de sueparación entre elementos, es una gran win.
+- La gran ventaja de este patrón es su flexibilidad, no tener que establecer anchos ni márgenes de separación entre elementos, es una gran win.
 - De momento esta es la mejor solución que he encontrado, pero seguro que se puede mejorar.
 
 #### Referencias:
